@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +17,7 @@ import NotFound from "./pages/NotFound";
 import ChatbotUI from "./components/AIChatbot/ChatbotUI";
 import { ChatbotProvider } from "./hooks/use-chatbot";
 import { UserProvider } from "./contexts/UserContext";
+import { GameProgressProvider } from "./contexts/GameProgressContext";
 
 const queryClient = new QueryClient();
 
@@ -25,27 +25,29 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <UserProvider>
-        <ChatbotProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route element={<AppLayout />}>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/courses" element={<CoursesPage />} />
-                <Route path="/roadmap" element={<RoadmapPage />} />
-                <Route path="/leaderboard" element={<LeaderboardPage />} />
-                <Route path="/hackbuddies" element={<HackBuddiesPage />} />
-                <Route path="/skill-graph" element={<SkillGraphPage />} />
-                <Route path="/resources" element={<ResourcesPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
-              </Route>
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <ChatbotUI />
-          </BrowserRouter>
-        </ChatbotProvider>
+        <GameProgressProvider>
+          <ChatbotProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Routes>
+                <Route element={<AppLayout />}>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/courses" element={<CoursesPage />} />
+                  <Route path="/roadmap" element={<RoadmapPage />} />
+                  <Route path="/leaderboard" element={<LeaderboardPage />} />
+                  <Route path="/hackbuddies" element={<HackBuddiesPage />} />
+                  <Route path="/skill-graph" element={<SkillGraphPage />} />
+                  <Route path="/resources" element={<ResourcesPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+                </Route>
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <ChatbotUI />
+            </BrowserRouter>
+          </ChatbotProvider>
+        </GameProgressProvider>
       </UserProvider>
     </TooltipProvider>
   </QueryClientProvider>
