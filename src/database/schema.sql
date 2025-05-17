@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS learnable_db;
+
+USE learnable_db;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE INDEX idx_email (email),
+  INDEX idx_username (username)
+); 
