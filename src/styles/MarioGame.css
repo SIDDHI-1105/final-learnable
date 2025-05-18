@@ -1,0 +1,183 @@
+.mario-game {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.game-background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.game-background.grass {
+  background-image: url('/assets/backgrounds/grass.png');
+}
+
+.game-background.desert {
+  background-image: url('/assets/backgrounds/desert.png');
+}
+
+.game-background.castle {
+  background-image: url('/assets/backgrounds/castle.png');
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.ground-tile {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+}
+.mario-sprite {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  z-index: 5;
+  image-rendering: pixelated;
+}
+.block {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+  image-rendering: pixelated;
+}
+.coin {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 4;
+  image-rendering: pixelated;
+}
+.enemy {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+  image-rendering: pixelated;
+}
+.pipe {
+  position: absolute;
+  width: 48px;
+  height: 64px;
+  z-index: 3;
+  image-rendering: pixelated;
+}
+
+.question-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.question-popup h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.options button:hover {
+  background: #45a049;
+}
+
+.options button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 100;
+}
+
+.game-over button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #f44336;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.game-over button:hover {
+  background: #d32f2f;
+}
+
+.level-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 200;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+} 

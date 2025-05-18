@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +17,8 @@ import NotFound from "./pages/NotFound";
 import ChatbotUI from "./components/AIChatbot/ChatbotUI";
 import { ChatbotProvider } from "./hooks/use-chatbot";
 import { UserProvider } from "./contexts/UserContext";
+import { CourseProvider } from './contexts/CourseContext';
+import { CoursePage } from './pages/CoursePage';
 
 const queryClient = new QueryClient();
 
@@ -26,25 +27,28 @@ const App = () => (
     <TooltipProvider>
       <UserProvider>
         <ChatbotProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route element={<AppLayout />}>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/courses" element={<CoursesPage />} />
-                <Route path="/roadmap" element={<RoadmapPage />} />
-                <Route path="/leaderboard" element={<LeaderboardPage />} />
-                <Route path="/hackbuddies" element={<HackBuddiesPage />} />
-                <Route path="/skill-graph" element={<SkillGraphPage />} />
-                <Route path="/resources" element={<ResourcesPage />} />
-                <Route path="/profile" element={<ProfilePage />} />
-              </Route>
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <ChatbotUI />
-          </BrowserRouter>
+          <CourseProvider>
+            <Toaster />
+            <Sonner />
+            <BrowserRouter>
+              <Routes>
+                <Route element={<AppLayout />}>
+                  <Route path="/" element={<HomePage />} />
+                  <Route path="/courses" element={<CoursesPage />} />
+                  <Route path="/roadmap" element={<RoadmapPage />} />
+                  <Route path="/leaderboard" element={<LeaderboardPage />} />
+                  <Route path="/hackbuddies" element={<HackBuddiesPage />} />
+                  <Route path="/skill-graph" element={<SkillGraphPage />} />
+                  <Route path="/resources" element={<ResourcesPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+                </Route>
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/course" element={<CoursePage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+              <ChatbotUI />
+            </BrowserRouter>
+          </CourseProvider>
         </ChatbotProvider>
       </UserProvider>
     </TooltipProvider>
