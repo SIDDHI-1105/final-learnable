@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+🚀 Personalized Tech Learning Hub
 
-## Project info
+Welcome to your personalized tech learning platform – a one-stop destination to level up your skills with AI-powered support, interactive lessons, roadmaps, and a thriving community.
 
-**URL**: https://lovable.dev/projects/78da55c0-0c04-4b25-9931-5cf0681e2b91
+🌟 Features
 
-## How can I edit this code?
+🔍 Resource Finder
+Discover free articles, curated tutorials, and guides on various tech topics
 
-There are several ways of editing your application.
+📚 Roadmap Generator
+Get personalized learning paths based on your goals and current skill level
 
-**Use Lovable**
+🎓 Courses
+First 2 lessons are free
+Continue learning with just ₹49 per lesson
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/78da55c0-0c04-4b25-9931-5cf0681e2b91) and start prompting.
+🧠 MCQ Assessments
+Each lesson ends with 10 multiple-choice questions to test and reinforce concepts
 
-Changes made via Lovable will be committed automatically to this repo.
+📊 Skill Graph
+See your strengths in research, design, leadership, and technical skills
 
-**Use your preferred IDE**
+📈 Course Progress Graph
+Track how far you've come with a visual course completion bar
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🔥 Learning Stats
+Track your hours learned, daily streak, and total XP – stay consistent and motivated
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🏆 Leaderboard
+Gain points and see how you rank among other learners
 
-Follow these steps:
+🎖 Skill Badges
+Earn a badge after completing each course
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🧑‍🤝‍🧑 Community Connect
+Join discussions and find teammates for hackathons
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+💻 Hackathon Organizer
+Host and manage your own hackathons with built-in tools
 
-# Step 3: Install the necessary dependencies.
-npm i
+🤖 AIbot
+Ask anything while learning and get instant answers, summaries, and learning suggestions
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🛠 Tech Stack
 
-**Edit a file directly in GitHub**
+🧠 React with TypeScript
+⚡ Vite for fast frontend tooling
+🎨 shadcn-ui for reusable UI components
+💅 Tailwind CSS for styling
+🪄 Zustand for state management
+🔗 React Router for routing
+📦 Lucide React for icon sets
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+👥 Contributors
 
-**Use GitHub Codespaces**
+Siddhi Tripathi
+🔗 https://www.linkedin.com/in/siddhi-tripathi-16n/
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Edulakanti Madhu Shalini
+🔗 https://www.linkedin.com/in/edulakanti-madhu-shalini-38357731b
 
-## What technologies are used for this project?
+Valabojumanaswini
+🔗 https://www.linkedin.com/in/manaswini-valaboju-484667357
 
-This project is built with:
+Swetha Konkott
+🔗 https://www.linkedin.com/in/swetha-konkott/
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🌱 Future Scope
 
-## How can I deploy this project?
+We are just getting started, and the future of Resource Finder is focused on creating an engaging, inclusive, and gamified learning experience.
 
-Simply open [Lovable](https://lovable.dev/projects/78da55c0-0c04-4b25-9931-5cf0681e2b91) and click on Share -> Publish.
+Gamified Learning Experience
+We plan to redesign the platform with a gamified theme to make learning fun and interactive. For example:
 
-## Can I connect a custom domain to my Lovable project?
+* After completing each lesson, learners will unlock flashcards and mini-games.
+* Imagine a Mario-style game: if the answer is correct, Mario jumps forward. If it's wrong, he falls.
+  This approach is designed to boost retention and overall engagement.
 
-Yes, you can!
+Career Path Switching
+We recognize that many learners explore different interests over time. Our roadmap includes a "Career Switch" module, allowing users to consider a new career path after every lesson, based on their performance and interest.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Support for Non-Technical Backgrounds
+We are also building features for learners from non-technical fields:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+* Psychology students can play interactive games like Mortal Mystery, where they apply concepts through storytelling and decision-making.
+* Creative modules will be available for students in arts, humanities, business, and other fields, making theoretical learning more hands-on and accessible.
+
+Hackathons for All
+We aim to build a diverse learning community. Our upcoming hackathons and challenges will welcome not only coders but also writers, designers, psychology students, and problem-solvers from every domain. Whether you enjoy coding or tackling real-world challenges, you will have a space to participate and grow.
+
+📦 Installation Guide
+
+🌐 Access the platform directly by visiting the website
